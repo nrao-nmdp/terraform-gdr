@@ -9,7 +9,7 @@ connected to a Cloudera Manager server so just have to hit "Next, next, next" a 
 
 ```
 module "cloudera" {
-    source  = "github.com/danielfrg/terrafor-cloudera/aws"
+    source  = "github.com/nrao-nmdp/terraform-gdr/aws"
 
     tag_name = "cloudera"
     platform = "centos7"
@@ -121,7 +121,3 @@ You might need to add this to you ssh client config (`~/.ssh/config`) if the boo
 Host *
     ServerAliveInterval 600
 ```
-
-The installation script are based on the
-[Installation Path B - Installation Using Cloudera Manager Parcels or Packages](https://www.cloudera.com/documentation/enterprise/5-9-x/topics/cm_ig_install_path_b.html)
-documentation
